@@ -1,13 +1,13 @@
-import "./App.css";
-import Header from "./Header";
-
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <h1 className="app__title">This is a title</h1>
-    </div>
-  );
+import React, { Component } from "react";
+class App extends Component {
+  render() {
+    
+    return (
+      <div>
+        <h1>Hello World</h1>
+      </div>
+    );
+  }
 }
 
 export default App;
