@@ -39,7 +39,6 @@
 .todo__title--complete {
   text-decoration: line-through;
   color: green;
-  margin-right: 200px;
 }
 
 .todo__complete {
