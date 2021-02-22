@@ -1,0 +1,23 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  background-color: hsla(0, 0%, 100%, 0.1);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  margin-top: 3rem;
+  width: 60%;
+}
+
+.quote__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.quote__author {
+  margin-top: 5px;
+}

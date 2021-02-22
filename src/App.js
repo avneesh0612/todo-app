@@ -1,12 +1,14 @@
+import React from "react";
 import "./App.css";
+import Quote from "./Quote/Quote";
+import Todos from "./Todo/Todos";
 
-// Functional component
 function App() {
   return (
     <div className="app">
-      <h1>Hello World</h1>
+      <Quote />
+      <Todos />
     </div>
   );
 }
-
 export default App;
