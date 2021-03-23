@@ -70,8 +70,11 @@ const Todos = forwardRef(() => {
         >
           <AddIcon />
         </IconButton>
-        <h2 className="todos__listHeader">Todos</h2>
+        <h2 className="todos__listHeader">
+          <center>Todos</center>
+          </h2>
       </form>
+
       <div className="todos__list">
         <FlipMove>
           {todos.map((todo) => (
