@@ -69,3 +69,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 767px) {
+  .todos__input {
+    width: 350px;
+  }
+}
