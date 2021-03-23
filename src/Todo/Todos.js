@@ -12,6 +12,7 @@ import useLocalStorage from "../useLocalStorage";
 const Todos = forwardRef(() => {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useLocalStorage("todos", []);
+
   useEffect(() => {
     const addLocal = () => {
       if (todos.length > 0) {
@@ -50,6 +51,7 @@ const Todos = forwardRef(() => {
     });
     setTodos([...todos]);
   };
+
   return (
     <div className="todos">
       <form>
@@ -68,8 +70,8 @@ const Todos = forwardRef(() => {
         >
           <AddIcon />
         </IconButton>
+        <h2 className="todos__listHeader">Todos</h2>
       </form>
-      <h2 className="todos__list--header">Todos</h2>
       <div className="todos__list">
         <FlipMove>
           {todos.map((todo) => (
@@ -82,11 +84,11 @@ const Todos = forwardRef(() => {
                     type="submit"
                     onClick={(e) => deleteTodo(e, todo.key)}
                   >
-                    <DeleteOutlineOutlinedIcon className="todo__completeDelete"/>
+                    <DeleteOutlineOutlinedIcon className="todo__completeDelete" />
                   </IconButton>
                 </div>
               ) : (
-                <React.Fragment>
+                <>
                   <h3 className="todo__title">{todo.text}</h3>
 
                   <div className="todos__icons">
@@ -112,7 +114,7 @@ const Todos = forwardRef(() => {
                       <DeleteOutlineOutlinedIcon />
                     </IconButton>
                   </div>
-                </React.Fragment>
+                </>
               )}
             </div>
           ))}

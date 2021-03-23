@@ -9,10 +9,13 @@
   backdrop-filter: blur(25px);
   width: 100%;
   margin-top: 15px;
-  text-transform: capitalize;
   font-size: 1.2rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.todo::first-letter {
+  text-transform: capitalize;
 }
 
 .todos__itemIcons {
@@ -33,7 +36,7 @@
   border-bottom: 1px solid black;
   margin-top: 15px;
   outline: none;
-  width: 80%;
+  width: 500px;
 }
 
 .todo__title--complete {
@@ -42,23 +45,21 @@
 }
 
 .todo__complete {
-  width: 100%; 
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
- }
+}
 
-.todos__list--header {
+.todos__listHeader {
   align-items: center;
   justify-content: center;
-  margin-left: 95px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
   background-color: hsla(0, 0%, 100%, 0.1);
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
-  width: 20%;
   margin-top: 15px;
   font-size: 1.2rem;
 }
